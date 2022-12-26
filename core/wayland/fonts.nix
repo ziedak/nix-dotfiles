@@ -17,7 +17,8 @@
       lato
       lexend
       dejavu_fonts
-      iosevka-bin
+      #iosevka-bin
+      iosevka-term
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
