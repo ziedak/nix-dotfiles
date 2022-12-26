@@ -1,6 +1,6 @@
 { inputs, pkgs, lib, config, ... }:
 
-with lib;
+with lib; 
 let 
 cfg = config.modules.hyprland;
 
@@ -15,7 +15,7 @@ in {
     home.packages = with pkgs; [
         # python39Packages.requests #?? if needed
         pamixer #  control the volume levels
-	brightnessctl # control device brightness
+	      brightnessctl # control device brightness
         swaybg # cycle wallpapers
         wlsunset # Day/night gamma adjustments
         wl-clipboard  # Wayland clipboard utilities, wl-copy and wl-paste
@@ -32,7 +32,9 @@ in {
     extraConfig = builtins.readFile ./hyprland.conf;
   };
     
-
+ programs = {
+    hyprland.enable = true;
+  };
 services.wlsunset = {
     enable = true;
     latitude = "52.0";

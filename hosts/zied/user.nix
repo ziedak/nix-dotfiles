@@ -11,7 +11,7 @@
         dunst.enable = false;
         eww.enable = false;
         firefox.enable = false;
-        hyprland.enable = true;
+        #hyprland.enable = true;
         newsboat.enable = false;
         rofi.enable = false;
         snapshot.enable = false;
