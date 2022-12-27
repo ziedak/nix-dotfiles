@@ -53,10 +53,13 @@ in {
             WLR_BACKEND = "vulkan";
             WLR_NO_HARDWARE_CURSORS = "1";
             XDG_SESSION_TYPE = "wayland";
+            XDG_CURRENT_DESKTOP="Hyprland";
+      
+      XDG_SESSION_DESKTOP="Hyprland";
             SDL_VIDEODRIVER = "wayland";
             CLUTTER_BACKEND = "wayland";
             GTK_THEME = "Catppuccin-Frappe-Pink";
-            WLR_DRM_DEVICES = "/dev/dri/card1:/dev/dri/card0";
+          #  WLR_DRM_DEVICES = "/dev/dri/card1:/dev/dri/card0";
         };
         loginShellInit = ''
          dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
