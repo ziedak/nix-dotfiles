@@ -11,9 +11,9 @@ mkService = lib.recursiveUpdate {
   };
 
 in {
-   imports = [
-    hyprland.nixosModules.default
-  ];
+  #  imports = [
+  #   hyprland.nixosModules.default
+  # ];
 	
     home.packages = with pkgs; [
         # python39Packages.requests #?? if needed
