@@ -25,7 +25,7 @@ in {
             #bandwhich # Bandwidth Tracking
            
             cached-nix-shell
-          #  dconf # Gnome  editor of applications internal settings
+           dconf # Gnome  editor of applications internal settings
             exa # better than ls
             fd # find entries in your filesystem
             # ffmpeg
