@@ -47,7 +47,7 @@ in
       displayManager = {                          # Display Manager
         lightdm = {
           enable = true;                          # Wallpaper and GTK theme
-          background = pkgs.nixos-artwork.wallpapers.nineish-dark-gray.gnomeFilePath;
+         # background = pkgs.nixos-artwork.wallpapers.nineish-dark-gray.gnomeFilePath;
           greeters = {
             gtk = {
               theme = {

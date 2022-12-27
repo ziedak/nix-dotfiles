@@ -58,11 +58,11 @@ in {
             GTK_THEME = "Catppuccin-Frappe-Pink";
             WLR_DRM_DEVICES = "/dev/dri/card1:/dev/dri/card0";
         };
-        loginShellInit = ''
-        dbus-update-activation-environment --systemd DISPLAY
-        eval $(gnome-keyring-daemon --start --components=ssh)
-        eval $(ssh-agent)
-        '';
+        # loginShellInit = ''
+        # dbus-update-activation-environment --systemd DISPLAY
+        # eval $(gnome-keyring-daemon --start --components=ssh)
+        # eval $(ssh-agent)
+        # '';
     };
 
     xdg= {
