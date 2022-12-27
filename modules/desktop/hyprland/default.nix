@@ -17,7 +17,7 @@
   imports = [ ../../programs/waybar.nix ];
 
   services.dbus.enable = true;
-
+ 
   environment = {
     loginShellInit = ''
       if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then

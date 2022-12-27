@@ -29,9 +29,9 @@ in {
    # wayland.windowManager.hyprland = {
    programs.hyprland={
     enable = true; 
-    package = inputs.hyprland.packages.${pkgs.system}.default.override {
-      nvidiaPatches = true;
-    };
+    # package = inputs.hyprland.packages.${pkgs.system}.default.override {
+    #   nvidiaPatches = true;
+    # };
     systemdIntegration = true;
     extraConfig = builtins.readFile ./hyprland.conf;
   };
