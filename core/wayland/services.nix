@@ -62,7 +62,10 @@
     '';
     
   
-
+ xserver = {
+    layout = "fr";
+    xkbVariant = "";
+  };
     #udev.packages = with pkgs; [gnome.gnome-settings-daemon];
 
     # gnome = {
