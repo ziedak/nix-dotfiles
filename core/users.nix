@@ -27,9 +27,9 @@
   };
 
    # Enable automatic login for the user.
-   services.xserver.displayManager={
-    autoLogin.enable = true;
-    autoLogin.user = "zied";
-    };
+  #  services.xserver.displayManager={
+  #   autoLogin.enable = true;
+  #   autoLogin.user = "zied";
+  #   };
 
 }
