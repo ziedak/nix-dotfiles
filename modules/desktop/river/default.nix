@@ -30,7 +30,7 @@
     ];
   };
 
-  programs.dconf.enable = true;
+  #programs.dconf.enable = true;
 
   xdg.portal = {                          # Required for flatpak with window managers
     enable = true;

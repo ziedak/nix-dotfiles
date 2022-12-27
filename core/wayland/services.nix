@@ -32,7 +32,7 @@
 
 
     dbus = {
-      packages = with pkgs; [dconf gcr udisks2];
+      #packages = with pkgs; [dconf gcr udisks2];
       enable = true;
     };
   
