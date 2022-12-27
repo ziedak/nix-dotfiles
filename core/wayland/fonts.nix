@@ -28,13 +28,7 @@
 
   
 # Install fonts
-    fonts = {
-        fonts = with pkgs; [
-            jetbrains-mono
-            roboto
-            openmoji-color
-            (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-        ];
+    
 
         fontconfig = {
             hinting.autohint = true;
