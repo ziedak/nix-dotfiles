@@ -20,7 +20,7 @@
     rtkit.enable = true;
     apparmor = {
       enable = true;
-      killUnconfinedConfinables = true;
+    #  killUnconfinedConfinables = true;
       packages = [pkgs.apparmor-profiles];
     };
 
