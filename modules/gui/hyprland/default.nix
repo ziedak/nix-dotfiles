@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, config, ... }:
+{ inputs, pkgs,hyprland, lib, config, ... }:
 
 with lib; 
 let 
