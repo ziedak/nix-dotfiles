@@ -7,7 +7,7 @@
     ./blocker.nix
     ./bootloader.nix 
     ./cron.nix
-    ./environment
+    ./environment.nix
     ./hardware.nix
     ./i18n.nix
     ./network.nix
