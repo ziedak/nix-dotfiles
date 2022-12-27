@@ -32,11 +32,11 @@ in {
     # package = inputs.hyprland.packages.${pkgs.system}.default.override {
     #   nvidiaPatches = true;
     # };
-    systemdIntegration = true;
-    extraConfig = builtins.readFile ./hyprland.conf;
+    # systemdIntegration = true;
+    # extraConfig = builtins.readFile ./hyprland.conf;
   };
     
- 
+  xdg.configFile."hypr/hyprland.conf".text =./hyprland.conf;
 services.wlsunset = {
     enable = true;
     latitude = "52.0";
