@@ -1,10 +1,10 @@
 { config, lib, inputs, ...}:
 
 {
+    imports = [../../modules/default.nix ];
      config.home.stateVersion = "22.11";
      config.home.extraOutputsToInstall = ["doc" "devdoc"];
    
-    imports = [../../modules/default.nix ];
     config.modules = {
         # gui
         bottom.enable = false;

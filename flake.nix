@@ -30,7 +30,7 @@
   };
 
   # All outputs for the system (configs)
-  outputs = { home-manager, nixpkgs, self, ... }@inputs:
+  outputs = { home-manager, nixpkgs,hyprland, self, ... }@inputs:
     let
       system = "x86_64-linux"; # current system
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;

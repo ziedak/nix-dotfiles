@@ -11,6 +11,9 @@ mkService = lib.recursiveUpdate {
   };
 
 in {
+   imports = [
+    hyprland.nixosModules.default
+  ];
 	
     home.packages = with pkgs; [
         # python39Packages.requests #?? if needed
@@ -23,7 +26,8 @@ in {
 	];
 
         # home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
-    wayland.windowManager.hyprland = {
+   # wayland.windowManager.hyprland = {
+   programs.hyprland={
     enable = true; 
     package = inputs.hyprland.packages.${pkgs.system}.default.override {
       nvidiaPatches = true;

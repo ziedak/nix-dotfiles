@@ -5,18 +5,7 @@
   inputs,
   ...
 }: {
-  environment = {
-    # set channels (backwards compatibility)
-    etc = {
-      "nix/flake-channels/nixpkgs".source = inputs.nixpkgs;
-      "nix/flake-channels/home-manager".source = inputs.home-manager;
-    };
-
-    # we need git for flakes
-    systemPackages = [pkgs.git];
-    defaultPackages = [];
-  };
-
+ 
   nixpkgs = {
     config = {
       allowUnfree = false;
@@ -27,6 +16,9 @@
       rust-overlay.overlays.default
     ];
   };
+
+  # compresses half the ram for use as swap
+  zramSwap.enable = true;
 
   # faster rebuilding
   documentation = {
@@ -88,6 +80,7 @@
       ];
     };
   };
+
   system.autoUpgrade.enable = false;
    # Do not touch
   system.stateVersion = "22.11";

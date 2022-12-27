@@ -33,7 +33,7 @@
         # system
         ./system/gtk
         ./system/packages
-        inputs.hyprland.homeManagerModules.default
+       # inputs.hyprland.homeManagerModules.default
     ];
 
 

@@ -4,7 +4,8 @@
   lib,
   ...
 }: {
-  services.openssh = {
+  services= {
+  openssh = {
     enable = true;
     permitRootLogin = lib.mkForce "no";
     openFirewall = true;
@@ -40,8 +41,6 @@
       ⣿⣿⣿⣿⠿⠛⠉⠉⠁⠀⢻⣿⡇⠀⠀⠀⠀⠀⠀⢀⠈⣿⣿⡿⠉⠛⠛⠛⠉⠉
       ⣿⡿⠋⠁⠀⠀⢀⣀⣠⡴⣸⣿⣇⡄⠀⠀⠀⠀⢀⡿⠄⠙⠛⠀⣀⣠⣤⣤⠄⠀
       >ligma
-
-
     '';
     hostKeys = [
       {
@@ -56,7 +55,7 @@
     ];
   };
 
-  services.fail2ban = {
+  fail2ban = {
     enable = true;
     maxretry = 5;
     ignoreIP = [
@@ -65,4 +64,5 @@
       "192.168.0.0/16"
     ];
   };
+};
 }

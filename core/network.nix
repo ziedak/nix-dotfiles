@@ -12,6 +12,7 @@
       unmanaged = ["docker0" "rndis0"];
       wifi.macAddress = "random";
     };
+    
     firewall = {
       enable = true;
       # if your minecraft server is not worky

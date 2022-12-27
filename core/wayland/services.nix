@@ -18,6 +18,7 @@
   };
 
   services = {
+
     greetd = {
       enable = true;
       settings = rec {
@@ -28,6 +29,41 @@
         default_session = initial_session;
       };
     };
+
+
+    dbus = {
+      packages = with pkgs; [dconf gcr udisks2];
+      enable = true;
+    };
+  
+  
+    printing.enable = false;
+    lorri.enable = true;
+    udisks2.enable = true;
+    fstrim.enable = true;
+    
+    pipewire = {
+      enable = true;
+      alsa = {
+          enable = true;
+          support32Bit = true;
+        };
+      pulse.enable = true;
+      # If you want to use JACK applications, uncomment this
+      # jack.enable = true;
+
+      # other
+      # wireplumber.enable = true;
+    };
+
+    journald.extraConfig = ''
+      SystemMaxUse=50M
+      RuntimeMaxUse=10M
+    '';
+    
+  
+
+    udev.packages = with pkgs; [gnome.gnome-settings-daemon];
 
     gnome = {
       glib-networking.enable = true;

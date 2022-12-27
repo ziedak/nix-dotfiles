@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
   boot = {
-    binfmt.emulatedSystems = [ "aarch64-linux" ];
+   # binfmt.emulatedSystems = [ "aarch64-linux" ];
     cleanTmpDir = true;
 
     # some kernel parameters, i dont remember what half of this shit does but who cares
@@ -40,7 +40,7 @@
         enable = true;
         useOSProber = true;
         efiSupport = true;
-        device = "/dev/sda";
+        device = "nodev";
         theme = null;
         backgroundColor = null;
         splashImage = null;
