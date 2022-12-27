@@ -36,9 +36,7 @@ in {
     extraConfig = builtins.readFile ./hyprland.conf;
   };
     
- programs = {
-    hyprland.enable = true;
-  };
+ 
 services.wlsunset = {
     enable = true;
     latitude = "52.0";
