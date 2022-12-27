@@ -27,18 +27,18 @@ in {
 
         # home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
   
-   wayland.windowManager.hyprland.enable = true;
-   #wayland.windowManager.hyprland = {
+  
+   wayland.windowManager.hyprland = {
   #  programs.hyprland={
-  #   enable = true; 
+    enable = true; 
     # package = inputs.hyprland.packages.${pkgs.system}.default.override {
     #   nvidiaPatches = true;
     # };
-    # systemdIntegration = true;
-    # extraConfig = builtins.readFile ./hyprland.conf;
-  # };
+     systemdIntegration = true;
+    extraConfig = builtins.readFile ./hyprland.conf;
+   };
     
-  xdg.configFile."hypr/hyprland.conf".text =./hyprland.conf;
+ # xdg.configFile."hypr/hyprland.conf".text =./hyprland.conf;
 services.wlsunset = {
     enable = true;
     latitude = "52.0";
