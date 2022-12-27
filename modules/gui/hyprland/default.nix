@@ -31,10 +31,10 @@ in {
     enable = true; 
     # package = inputs.hyprland.packages.${pkgs.system}.default.override {
     #   nvidiaPatches = true;
-     };
+    # };
     systemdIntegration = true;
     extraConfig = builtins.readFile ./hyprland.conf;
-  #};
+  };
     
  
 services.wlsunset = {
