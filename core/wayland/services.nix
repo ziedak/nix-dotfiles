@@ -63,7 +63,7 @@
     
   
 
-    udev.packages = with pkgs; [gnome.gnome-settings-daemon];
+    #udev.packages = with pkgs; [gnome.gnome-settings-daemon];
 
     # gnome = {
     #   glib-networking.enable = true;

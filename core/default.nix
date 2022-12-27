@@ -7,7 +7,9 @@
     ./blocker.nix
     ./bootloader.nix 
     ./cron.nix
+    ./environment
     ./hardware.nix
+    ./i18n.nix
     ./network.nix
     ./nix.nix
     ./openssh.nix
