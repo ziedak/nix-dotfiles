@@ -26,12 +26,12 @@ in {
 	];
 
         # home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
-   # wayland.windowManager.hyprland = {
+   wayland.windowManager.hyprland = {
    programs.hyprland={
     enable = true; 
     # package = inputs.hyprland.packages.${pkgs.system}.default.override {
     #   nvidiaPatches = true;
-    # };
+     };
     systemdIntegration = true;
     extraConfig = builtins.readFile ./hyprland.conf;
   };
