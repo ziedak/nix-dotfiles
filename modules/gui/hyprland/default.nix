@@ -26,9 +26,7 @@ in {
 	];
 
         # home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
-  programs.dconf = {
-    enable = true;
-  };
+  
   
    wayland.windowManager.hyprland = {
   #  programs.hyprland={
